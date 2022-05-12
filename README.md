@@ -1,1 +1,1 @@
-Business card generator
+https://github.com/vedinche/business-card-generator
