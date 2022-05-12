@@ -1,0 +1,367 @@
+let jsonTemplatesData = [{
+	logo: {
+		top: 81,
+		left: 47
+	},
+	name: {
+		text: 'Che Guevara',
+		top: 79,
+		left: 153,
+		style: 'normal',
+		size: 60,
+		color: '#ffffff',
+		weight: 'bold',
+		font: 'Roboto'
+	},
+	post: {
+		text: 'Revolucionario',
+		top: 159,
+		left: 222,
+		style: 'normal',
+		size: 22,
+		color: '#ffffff',
+		weight: 'normal'
+	},
+	company: {
+		text: 'PATRIA O MUERTE <sup>&copy;</sup>',
+		top: 9,
+		left: 220,
+		style: '24',
+		size: 'normal',
+		color: '#ffffff',
+		weight: 'thin'
+	},
+	address: {
+		text: 'Republica de Cuba, Havana, Castro avenue, 5',
+		top: 281,
+		left: 164,
+		style: 'normal',
+		size: '14',
+		color: '#ffffff',
+		weight: 'thin'
+	},
+	phone: {
+		text: '+875483356252',
+		top: 199,
+		left: 213,
+		style: 'normal',
+		size: '22',
+		color: '#ffffff',
+		weight: 'normal'
+	},
+	web: {
+		text: 'vivalarevolucion.cu',
+		top: 232,
+		left: 202,
+		style: 'italic',
+		size: '22',
+		color: '#ffffff',
+		weight: "normal"
+	}
+},
+
+{
+	logo: {
+		top: 20,
+		left: 35
+	},
+	name: {
+		text: 'Боб Марли',
+		top: 50,
+		left: 150,
+		style: 'normal',
+		size: 36,
+		color: '#ab1a1a',
+		weight: 'normal'
+	},
+	post: {
+		text: 'музыкант',
+		top: 90,
+		left: 150,
+		style: 'normal',
+		size: 22,
+		color: '#ab1a1a',
+		weight: 'normal'
+	},
+	company: {
+		text: 'RASTAMANA JAMAICA RECORDS <sup>&copy;</sup>',
+		top: 15,
+		left: 150,
+		style: '24',
+		size: 'normal',
+		color: '#ffffff',
+		weight: 'thin'
+	},
+	address: {
+		text: 'Beach Of Peace, Jamaica',
+		top: 290,
+		left: 170,
+		style: 'normal',
+		size: '24',
+		color: '#000000',
+		weight: 'thin'
+	},
+	phone: {
+		text: '+335483456251',
+		top: 125,
+		left: 150,
+		style: 'normal',
+		size: '16',
+		color: '#ffffff',
+		weight: 'normal'
+	},
+	web: {
+		text: 'ganjubas.rec',
+		top: 269,
+		left: 28,
+		style: 'normal',
+		size: '16',
+		color: '#ab1a1a',
+		weight: "normal"
+	}
+},
+
+{
+	logo: {
+		top: 12,
+		left: 472
+	},
+	name: {
+		text: 'Боб Марли',
+		top: 76,
+		left: 149,
+		style: 'normal',
+		size: 36,
+		color: '#ab1a1a',
+		weight: 'normal'
+	},
+	post: {
+		text: 'музыкант',
+		top: 122,
+		left: 195,
+		style: 'normal',
+		size: 22,
+		color: '#ab1a1a',
+		weight: 'normal'
+	},
+	company: {
+		text: 'RASTAMANA JAMAICA RECORDS <sup>&copy;</sup>',
+		top: 15,
+		left: 80,
+		style: 'normal',
+		size: '24',
+		color: '#000000',
+		weight: 'thin'
+	},
+	address: {
+		text: 'Beach Of Peace, Jamaica',
+		top: 174,
+		left: 102,
+		style: 'normal',
+		size: '24',
+		color: '#000000',
+		weight: 'thin'
+	},
+	phone: {
+		text: '+335483456251',
+		top: 269,
+		left: 412,
+		style: 'normal',
+		size: '16',
+		color: '#000000',
+		weight: 'normal'
+	},
+	web: {
+		text: 'ganjubas.rec',
+		top: 269,
+		left: 33,
+		style: 'normal',
+		size: '16',
+		color: '#ab1a1a',
+		weight: 'normal'
+	}
+},
+
+{
+	logo: {
+		top: 12,
+		left: 472
+	},
+	name: {
+		text: 'Боб Марли',
+		top: 7,
+		left: 264,
+		style: 'normal',
+		size: 36,
+		color: '#ff1493',
+		weight: 'normal'
+	},
+	post: {
+		text: 'музыкант',
+		top: 60,
+		left: 310,
+		style: 'normal',
+		size: 22,
+		color: '#7b68ee',
+		weight: 'normal'
+	},
+	company: {
+		text: 'RASTAMANA JAMAICA RECORDS <sup>&copy;</sup>',
+		top: 233,
+		left: 184,
+		style: 'normal',
+		size: '24',
+		color: '#7b68ee',
+		weight: 'thin'
+	},
+	address: {
+		text: 'Beach Of Peace, Jamaica',
+		top: 129,
+		left: 261,
+		style: 'normal',
+		size: '24',
+		color: '#ff1493',
+		weight: 'thin'
+	},
+	phone: {
+		text: '+335483456251',
+		top: 269,
+		left: 412,
+		style: 'normal',
+		size: '16',
+		color: '#ff1493',
+		weight: 'normal'
+	},
+	web: {
+		text: 'ganjubas.rec',
+		top: 266,
+		left: 188,
+		style: 'normal',
+		size: '16',
+		color: '#ff1493',
+		weight: "normal"
+	}
+},
+
+{
+	logo: {
+		top: 81,
+		left: 12
+	},
+	name: {
+		text: 'Боб Марли',
+		top: 26,
+		left: 30,
+		style: 'normal',
+		size: 36,
+		color: '#ab1a1a',
+		weight: 'normal'
+	},
+	post: {
+		text: 'музыкант',
+		top: 34,
+		left: 320,
+		style: 'normal',
+		size: 22,
+		color: '#ab1a1a',
+		weight: 'normal'
+	},
+	company: {
+		text: 'RASTAMANA JAMAICA RECORDS <sup>&copy;</sup>',
+		top: 298,
+		left: 29,
+		style: 'normal',
+		size: '24',
+		color: '#ffffff',
+		weight: 'thin'
+	},
+	address: {
+		text: 'Beach Of Peace, Jamaica',
+		top: 264,
+		left: 31,
+		style: 'normal',
+		size: '24',
+		color: '#000000',
+		weight: 'thin'
+	},
+	phone: {
+		text: '+335483456251',
+		top: 111,
+		left: 115,
+		style: 'normal',
+		size: '16',
+		color: '#ffffff',
+		weight: 'normal'
+	},
+	web: {
+		text: 'ganjubas.rec',
+		top: 301,
+		left: 488,
+		style: 'normal',
+		size: '16',
+		color: '#ab1a1a',
+		weight: "normal"
+	}
+},
+
+{
+	logo: {
+		top: 4,
+		left: 50
+	},
+	name: {
+		text: 'Боб Марли',
+		top: 146,
+		left: 184,
+		style: 'normal',
+		size: 36,
+		color: '#ee82ee',
+		weight: 'normal'
+	},
+	post: {
+		text: 'музыкант',
+		top: 203,
+		left: 216,
+		style: 'normal',
+		size: 22,
+		color: '#ee82ee',
+		weight: 'normal'
+	},
+	company: {
+		text: 'RASTAMANA JAMAICA RECORDS <sup>&copy;</sup>',
+		top: 5,
+		left: 271,
+		style: 'normal',
+		size: '20',
+		color: '#ee82ee',
+		weight: 'thin'
+	},
+	address: {
+		text: 'Beach Of Peace, Jamaica',
+		top: 31,
+		left: 330,
+		style: 'normal',
+		size: '18',
+		color: '#ee82ee',
+		weight: 'thin'
+	},
+	phone: {
+		text: '+335483456251',
+		top: 94,
+		left: 218,
+		style: 'normal',
+		size: '16',
+		color: '#ee82ee',
+		weight: 'normal'
+	},
+	web: {
+		text: 'ganjubas.rec',
+		top: 282,
+		left: 197,
+		style: 'normal',
+		size: '16',
+		color: '#ee82ee',
+		weight: "normal"
+	}
+}
+];

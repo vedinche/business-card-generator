@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Viaoda+Libre&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Marck+Script|Neucha|Philosopher&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	background: #fbfbfb;
+}
+
+canvas {
+	display: none;
+}
+
+/* .clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+} */
+/* ====================================================================== */
+.header {
+	background-color: #3e606f;
+	width: 100%;
+}
+
+.header__wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 1100px;
+	margin: 0 auto;
+	font-size: 18px;
+	color: #fff;
+}
+
+.header__faq,
+.header__button {
+	cursor: pointer;
+	padding: 10px 15px;
+}
+
+.header__faq:hover,
+.header__button:hover {
+	background-color: #ff9900;
+	border-radius: 4px;
+	transition: .4s;
+}
+
+.header__faq:active,
+.header__button:active {
+	background-color: #ff9900;
+	border-radius: 4px;
+	padding: 9px 14px;
+	transition: .4s;
+}
+
+/* ============================================================================ */
+
+/* MAIN============================================================================= */
+.container {
+	max-width: 940px;
+	margin: 0 auto;
+	min-height: calc(100vh - 130px);
+}
+
+.constructor {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 100px;
+}
+
+/* TEXT__EDITOR======================================================================= */
+.text-editor {
+	width: 600px;
+	height: 100px;
+	border: 1px solid rgba(62, 96, 111, 0.2);
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.text-btn {
+	padding: 6px 8px;
+	border-radius: 4px;
+	box-shadow: -1px 0px 1px 2px rgba(62, 96, 111, 0.1);
+	cursor: pointer;
+	transition: .4s;
+}
+
+.text-italic {
+	padding: 6px 9px;
+}
+
+.text-up {
+	font-weight: bold;
+	font-size: 18px;
+	padding: 3px 8px;
+}
+
+.text-low {
+	font-weight: bold;
+	font-size: 18px;
+	padding: 3px 9px;
+}
+
+.text-btn:active {
+	box-shadow: none;
+}
+
+.select {
+	border: 1px dashed #a9a9a9;
+	cursor: pointer;
+	height: 26px;
+	border-radius: 2px;
+}
+
+.select-font {
+	width: 136px;
+}
+
+.select-color {
+	width: 20px;
+	border: 1px dashed #a9a9a9;
+	cursor: pointer;
+}
+
+.select-size {
+	height: 26px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.big {
+	text-transform: uppercase;
+}
+
+.small {
+	text-transform: lowercase;
+}
+
+.left {
+	left: 50px;
+}
+
+/* CANVAS__FIRST-BLOCK=============================================================== */
+.canvas-wrap {
+	max-width: 600px;
+	min-height: 334px;
+	background-color: #fff;
+	position: relative;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.upload-input {
+	width: 10px;
+}
+
+.card-logo {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 6px;
+	top: 6px;
+	cursor: pointer;
+}
+
+.card-content {
+	cursor: pointer;
+}
+
+.card-name {
+	font-size: 36px;
+	position: absolute;
+	left: 200px;
+	top: 40px;
+	margin: 0;
+}
+
+.card-post {
+	font-size: 24px;
+	position: absolute;
+	left: 200px;
+	top: 90px;
+}
+
+.card-company {
+	font-size: 22px;
+	position: absolute;
+	left: 200px;
+	top: 130px;
+}
+
+.card-address {
+	position: absolute;
+	left: 200px;
+	top: 170px;
+}
+
+.card-phone {
+	position: absolute;
+	left: 200px;
+	top: 210px;
+}
+
+.card-web {
+	position: absolute;
+	left: 200px;
+	top: 250px;
+}
+
+.card-phone,
+.card-web {
+	font-size: 16px;
+}
+
+.black {
+	color: #000;
+}
+
+/* DRAW__EDITOR========================================================================== */
+.draw-wrap {
+	margin-top: 40px;
+}
+
+.draw-text {
+	text-align: center;
+}
+
+/* SECOND__CANVAS======================================================================= */
+
+.draw-editor {
+	width: 600px;
+	height: 100px;
+	border: 2px solid #800080;
+	margin-top: 10px;
+}
+
+/* INPUTS================================================================================= */
+.filds {
+	display: block;
+}
+
+.inputs-wrap {
+	margin-bottom: 10px;
+	min-height: 40px;
+}
+
+.inputs {
+	width: 260px;
+	height: 30px;
+	max-height: 100px;
+	border-radius: 10px;
+	border: 1px dashed #a9a9a9;
+	padding: 9px 10px 1px 10px;
+	font-weight: 500;
+	font-size: 18px;
+	resize: vertical;
+	outline: 0;
+	position: relative;
+}
+
+.inputs:focus {
+	border: 2px dashed #3e606f;
+}
+
+.inputs__del {
+	font-size: 24px;
+	color: #ff0000;
+	vertical-align: 16px;
+	padding-left: 2px;
+	cursor: pointer;
+}
+
+/*Кнопки под визиткой*/
+.control-tools {
+	margin: 40px 0;
+	display: flex;
+	padding-left: 56px;
+}
+
+.control-btn {
+	display: block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 2px;
+	font-size: 13px;
+	color: #fff;
+	padding: 14px;
+	text-decoration: none;
+	background: #3e606f;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+	margin-left: 10px;
+}
+
+.apply-btn {
+	margin: 0;
+}
+
+.fp {
+	padding-right: 4px;
+}
+
+.control-btn:hover {
+	background-color: #ff9900;
+	transition: .4s;
+	text-decoration: none;
+}
+
+.control-btn:active {
+	position: relative;
+	top: 1px;
+}
+
+/* TEMPLATE__IMG==================================================================== */
+.template-wrap {
+	max-width: 280px;
+	/* min-height: 1182px; */
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: -12px;
+	z-index: 11;
+	display: none;
+	background: rgb(41, 40, 36)
+}
+
+.template-header {
+	width: 300px;
+	height: 80px;
+}
+
+.templates {
+	width: 220px;
+	height: 480px;
+	overflow-y: scroll;
+	scrollbar-width: none;
+	padding: 30px;
+	right: 0;
+	top: 0;
+	background: #292824
+}
+
+.templates::-webkit-scrollbar {
+	width: 0px;
+	/* background: transparent;  опционально  */
+}
+
+.template-close {
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	right: 20px;
+	top: 8px;
+	opacity: 0.3;
+	cursor: pointer;
+	transition: .4s;
+}
+
+.template-close:hover {
+	opacity: 1;
+}
+
+.template-close:active {
+	opacity: 0.3;
+}
+
+.template-close::before,
+.template-close::after {
+	position: absolute;
+	left: 15px;
+	content: ' ';
+	height: 24px;
+	width: 2px;
+	background-color: #fff;
+}
+
+.template-close::before {
+	transform: rotate(45deg);
+}
+
+.template-close::after {
+	transform: rotate(-45deg);
+}
+
+
+.template-img {
+	width: 220px;
+	height: 160px;
+	padding: 10px 0;
+	cursor: pointer;
+	position: relative;
+}
+
+/* FOOTER================================================================================= */
+.footer {
+	background: #3e606f;
+	height: 65px;
+}
+
+@media (max-width: 900px) {
+	.constructor {
+		display: block;
+		padding: 20px 0;
+	}
+
+	.visitka-block {
+		max-width: 602px;
+		margin: 0 auto;
+	}
+
+	.filds {
+		max-width: 600px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+	.inputs-wrap {
+		max-width: 300px;
+		margin: 0 auto;
+		padding-top: 20px;
+	}
+}
